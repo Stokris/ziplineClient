@@ -3,6 +3,7 @@ import ZiplineCreate from './ZiplineCreate';
 import ZiplineTable from './ZiplineTable';
 import ZiplineEdit from './ZiplineEdit';
 import { Container, Row, Col } from 'reactstrap';
+import APIURL from '../helpers/environment';
 
 class ZiplineIndex extends React.Component {
     constructor(props) {
@@ -16,7 +17,7 @@ class ZiplineIndex extends React.Component {
 
     fetchZiplines = () => {
         console.log(this.props.token);
-        fetch("http://localhost:3000/api/log", {
+        fetch(`${APIURL}/api/log`, {
             method: 'GET',
             headers: new Headers ({
                 'Content-Type': 'application/json',
@@ -30,7 +31,7 @@ class ZiplineIndex extends React.Component {
     }
 
     ziplineDelete =(event) => {
-        fetch(`http://localhost:3000/api/log/${event.target.id}`, {
+        fetch(`${APIURL}/api/log/${event.target.id}`, {
             method: 'DELETE',
             body: JSON.stringify({ log: {id: event.target.id } }),
             headers: new Headers({
@@ -43,7 +44,7 @@ class ZiplineIndex extends React.Component {
 
     ziplineUpdate = (event, zipline) => {
         console.log(zipline);
-        fetch(`http://localhost:3000/api/log/${zipline.id}`, {
+        fetch(`${APIURL}/api/log/${zipline.id}`, {
             method: 'PUT',
             body: JSON.stringify({ log: zipline }),
             headers: new Headers ({
