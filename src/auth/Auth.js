@@ -7,15 +7,15 @@ import './auth.css';
 const Auth = (props) => {
     return (
         <Container className="auth-container">
-            <Row className="hover">
-                <Col md="12">
+            <Row>
+                <div className="suli">
+            <Col md="12">
                     <Signup setToken={props.setToken}/>
                 </Col>
-                <br />
-                <br />
-                <Col md="12" className="login-col">
+                <Col md="12">
                     <Login setToken={props.setToken}/>
                 </Col>
+                </div>
             </Row>
         </Container>
     )
