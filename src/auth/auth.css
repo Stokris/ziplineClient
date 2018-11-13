@@ -1,12 +1,16 @@
 .auth-container {
-    background-color: rgb(71, 141, 123);
+    background: url("https://c1.staticflickr.com/5/4361/36533604031_e0c558f4c9_b.jpg") no-repeat center;
+    /* background-image: transparent;  */
+    background-size: cover;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
     margin-top: 5em;
     padding: 2em;
-    border: 1px solid #e5e5e5;
+    border: 3px solid #e5e5e5;
     border-radius: 0.4em;
-    box-shadow: 2px 4px 20px rgb(65, 131, 111);
+    box-shadow: 2px 4px 20px rgb(65, 131, 111);  
 }
 
-.login-col {
-    border-left: 0px solid black;
-}
+/* .login-col {
+    border-left: px solid black;
+} */
