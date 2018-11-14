@@ -31,7 +31,7 @@ class SiteBar extends React.Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Button onClick={() => this.props.clickLogout()}>Logout</Button>
+                            <Button onClick={() => this.props.clickLogout()} outline color="info">Logout</Button>
                         </NavItem>
                     </Nav>
                 </Collapse>
