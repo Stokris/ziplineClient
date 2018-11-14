@@ -40,7 +40,7 @@ class ZiplineEdit extends React.Component {
         return (
             <div>
                 <Modal isOpen={true}>
-                    <ModalHeader>Log your adventure</ModalHeader>
+                    <ModalHeader>Edit your adventure</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.handleSubmit} >
                             <FormGroup>
@@ -65,8 +65,8 @@ class ZiplineEdit extends React.Component {
                                 <Label for="price">Total Price</Label>
                                 <Input id="price" type="text" name="price" value={this.state.price} placeholder="enter total cost" onChange={this.handleChange} />
                             </FormGroup>
-                            <Button type="submit" color="primary"> Submit </Button>
-                            <Button type="cancel" color="danger"> Cancel </Button>
+                            <Button type="submit" outline color="success"> Submit </Button>
+                            <Button type="cancel" outline color="danger"> Cancel </Button>
                         </Form>
                     </ModalBody>
                 </Modal>

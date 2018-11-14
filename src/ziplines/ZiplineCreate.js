@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import APIURL from '../helpers/environment';
 
+
 class ZiplineCreate extends Component {
     constructor(props) {
         super(props)
@@ -45,7 +46,7 @@ class ZiplineCreate extends Component {
 
     render() {
         return (
-            <div>
+            <div className="zipcreate">
                 <h3>Track your zipline adventures!</h3>
                 <hr />
                 {/* after the form is submitted the data gets sent to the method above*/}
@@ -72,7 +73,7 @@ class ZiplineCreate extends Component {
                         <Label for="price">Total Price</Label>
                         <Input id="price" type="text" name="price" value={this.state.price} placeholder="enter total cost" onChange={this.handleChange} />
                     </FormGroup>
-                    <Button type="submit"> Submit </Button>
+                    <Button outline color="info" type="submit"> Submit </Button>
                 </Form>
             </div>
         )

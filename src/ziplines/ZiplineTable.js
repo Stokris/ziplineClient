@@ -5,7 +5,7 @@ import { Table, Button } from 'reactstrap';
 const ZiplineTable = (props) => {
 
     return (
-        <div>
+        <div className="ziphistory">
             <h3>Zipline History</h3>
             <hr />
             <Table>
@@ -30,8 +30,8 @@ const ZiplineTable = (props) => {
                                     <td>{zipline.people}</td>
                                     <td>{zipline.price}</td>
                                     <td>
-                                        <Button id={zipline.id} onClick={props.delete}>Delete</Button>|
-                                        <Button id={zipline.id} onClick={e => props.update(e, zipline)} color="warning">Update</Button>
+                                        <Button id={zipline.id} onClick={props.delete} outline color="danger">Delete</Button>|
+                                        <Button id={zipline.id} onClick={e => props.update(e, zipline)} outline color="success" >Update</Button>
                                     </td>
                                 </tr>
                             )

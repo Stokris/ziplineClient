@@ -1,5 +1,6 @@
 import React from 'react';
 import ZiplineIndex from '../ziplines/ZiplineIndex';
+import './splash.css';
 
 const Splash = (props) => {
     return (

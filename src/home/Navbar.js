@@ -25,7 +25,7 @@ class SiteBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="faded" light expand="md">
+                <Navbar light expand="md">
                 <NavbarBrand href="/">Zipline Extravaganzas</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
