@@ -9,6 +9,7 @@ import {
     NavItem,
     Button
 } from 'reactstrap';
+import './navbar.css';
 
 class SiteBar extends React.Component {
     constructor(props) {   
@@ -25,8 +26,8 @@ class SiteBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar light expand="md">
-                <NavbarBrand href="/">Zipline Extravaganzas</NavbarBrand>
+                <Navbar id="navbar" light expand="md">
+                <NavbarBrand id="color" href="/">Zipline Extravaganzas</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>

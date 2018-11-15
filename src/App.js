@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './home/Navbar';
 import Auth from './auth/Auth';
+import Footer from './home/Footer';
 import Splash from './home/Splash';
 import {
   BrowserRouter as Router,
@@ -59,6 +60,7 @@ class App extends Component {
         <div>
           <NavBar clickLogout={this.logout}/>
           {this.protectedViews()}
+          <Footer />
         </div>
       </Router>
     );

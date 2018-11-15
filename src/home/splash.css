@@ -3,12 +3,12 @@
     background-size: cover;
     margin-top: 0em;
     padding: 2em;
-    border: 3px solid #e5e5e5;
+    border: 3px solid rgba(243,110,62);
     border-radius: 0.4em;
     /* box-shadow: 2px 4px 20px rgb(65, 131, 111);  */
     text-align: center;
     /* background-color: rgba(47, 79, 79, 0.7); */
-    height: 61em;
+    height: 60em;
 }
 
 .ziphistory {
