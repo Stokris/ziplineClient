@@ -6,6 +6,7 @@ import './auth.css';
 
 const Auth = (props) => {
     return (
+        <div>
         <Container className="auth-container">
             <Row>
                 <div className="suli">
@@ -18,6 +19,7 @@ const Auth = (props) => {
                 </div>
             </Row>
         </Container>
+        </div>
     )
 }
 

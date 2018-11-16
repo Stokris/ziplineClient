@@ -1,8 +1,10 @@
 #footer {
-    color: rgba(23,160,143);
+    color: #FFC107;
+    text-align: center;
 }
 
 #fcolor {
     background-color: black;
-    margin: auto;
+    width: 99.9%;
+    padding: 0.5em;
 }

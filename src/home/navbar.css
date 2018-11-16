@@ -1,7 +1,9 @@
 #navbar {
     background-color: black;
+    padding: 0.5em;
+    margin: auto;
 }
 
 #color{
-    color: rgba(23,162,184);
+    color: #FFC107;
 }
